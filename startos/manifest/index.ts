@@ -11,10 +11,10 @@ import {
 } from './i18n'
 
 export const manifest = setupManifest({
-  id: 'lightning-fork',
-  title: 'Lightning Fork',
+  id: 'lightning-xbt',
+  title: 'Lightning XBT',
   license: 'MIT',
-  packageRepo: 'https://github.com/paulscode/lightning-fork-startos',
+  packageRepo: 'https://github.com/Kilombino/lightning-xbt-startos',
   upstreamRepo: 'https://github.com/paulscode/lightning-fork',
   marketingUrl: 'https://github.com/paulscode/lightning-fork',
   donationUrl: null,
@@ -36,11 +36,12 @@ export const manifest = setupManifest({
       // for two platforms ("cannot overwrite digest"). The tag is never moved
       // once published. What it resolved to when this version was released,
       // to compare with `docker buildx imagetools inspect <tag>`:
-      //   index sha256:bea8419bc65b1f8cbba38f27e8338eb9822fd0ea625e0576a6689d1d2c6819fc
+      //   index sha256:10c3eb254c849a5c7270fee4428d1cdcb868ce769fef17e1fc351632ff9565fb
       // The Makefile refuses to pack while a digest placeholder is in
       // place, for a future edit that forgets this line.
       source: {
-        dockerTag: 'paulscode/umbrel-lightning-fork:1.3.2-blake2b.24',
+        dockerTag:
+          'ghcr.io/kilombino/umbrel-lightning-xbt:1.3.2-blake2b.24-xbt1',
       },
       arch: ['aarch64', 'x86_64'],
     },

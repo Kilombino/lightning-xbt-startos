@@ -42,7 +42,7 @@ export const taskDashboardOnion = sdk.setupOnInit(async (effects, kind) => {
 
   const onionInput = {
     urlPluginMetadata: {
-      packageId: 'lightning-fork',
+      packageId: 'lightning-xbt',
       hostId: dashboardHostId,
       interfaceId: dashboardInterfaceId,
       internalPort: dashboardPort,
