@@ -5,7 +5,9 @@ import { nextcloudDavUrl } from '../utils'
 export const current = VersionInfo.of({
   version: '0.21.6-beta.23:0',
   releaseNotes: {
-    en_US: `- If a Bitcoin node this service uses fails to update, StartOS puts the node's data back by swapping folders, and Lightning Fork kept reading the old copy: LND, or the bridge's SHA256 node, kept the node's old RPC credentials and every call to it failed. Lightning Fork now restarts itself when its own Bitcoin node starts again and the node's new credentials have not reached it 30 seconds after the node is ready, and the bridge's SHA256 node is set up again each time its SHA256 Bitcoin node starts and is ready.
+    en_US: `Lightning XBT, packaged by Kilombino: Paul Lamb's Lightning Fork 0.21.6-beta.23:0 as it is, with dashboard 1.3.2-blake2b.22-xbt1 (Paul's 1.3.2-blake2b.22 plus Kilombino's umbrel-lightning-fork #1 and #2: Mempool apps from one list, and the newest payments first). Lightning Fork's own notes follow.
+
+- If a Bitcoin node this service uses fails to update, StartOS puts the node's data back by swapping folders, and Lightning Fork kept reading the old copy: LND, or the bridge's SHA256 node, kept the node's old RPC credentials and every call to it failed. Lightning Fork now restarts itself when its own Bitcoin node starts again and the node's new credentials have not reached it 30 seconds after the node is ready, and the bridge's SHA256 node is set up again each time its SHA256 Bitcoin node starts and is ready.
 - With a pruned Bitcoin Knots BLAKE2b node, blocks it has pruned are fetched only from peers that advertise the BLAKE2b service bit, which Bitcoin Knots 29.4.3 requires before it serves blocks past the fork.
 - The bridge: a swap whose hold invoice the node deleted (with the gc-canceled-invoices options on) now ends instead of retrying forever, once the bridge has checked it is reading the node that issued the invoice; on any other node it stops and is listed as needing the operator. A swap already stuck this way ends after the update.
 - Needs StartOS 0.4.0.2 or newer, as since 0.21.4-beta.19:0.

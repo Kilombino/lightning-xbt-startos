@@ -11,10 +11,10 @@ import {
 } from './i18n'
 
 export const manifest = setupManifest({
-  id: 'lightning-fork',
-  title: 'Lightning Fork',
+  id: 'lightning-xbt',
+  title: 'Lightning XBT',
   license: 'MIT',
-  packageRepo: 'https://github.com/paulscode/lightning-fork-startos',
+  packageRepo: 'https://github.com/Kilombino/lightning-xbt-startos',
   upstreamRepo: 'https://github.com/paulscode/lightning-fork',
   marketingUrl: 'https://github.com/paulscode/lightning-fork',
   donationUrl: null,
@@ -40,7 +40,7 @@ export const manifest = setupManifest({
       // The Makefile refuses to pack while a digest placeholder is in
       // place, for a future edit that forgets this line.
       source: {
-        dockerTag: 'paulscode/umbrel-lightning-fork:1.3.2-blake2b.22',
+        dockerTag: 'ghcr.io/kilombino/umbrel-lightning-xbt:1.3.2-blake2b.22-xbt1',
       },
       arch: ['aarch64', 'x86_64'],
     },
