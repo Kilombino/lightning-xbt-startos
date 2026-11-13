@@ -6,7 +6,7 @@ Paul Lamb's [Lightning Fork](https://github.com/paulscode/lightning-fork) packag
 unchanged except for the package id (`lightning-xbt`, so it installs beside
 Lightning Fork), its name, and the dashboard image, built from
 [Kilombino/umbrel-lightning-fork `lightning-xbt`](https://github.com/Kilombino/umbrel-lightning-fork/tree/lightning-xbt):
-Paul's 1.3.2-blake2b.22 plus Kilombino's
+Paul's 1.3.2-blake2b.24 plus Kilombino's
 [umbrel-lightning-fork#1](https://github.com/paulscode/umbrel-lightning-fork/pull/1) and
 [#2](https://github.com/paulscode/umbrel-lightning-fork/pull/2). All credit to Paul Lamb;
 signed with Kilombino's key. What follows is Paul's README.
